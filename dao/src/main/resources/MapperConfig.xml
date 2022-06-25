@@ -1,0 +1,17 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="kotlin" targetRuntime="MyBatis3Kotlin">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/test?useSSL=false"
+                        userId="root"
+                        password="123456"/>
+
+        <javaModelGenerator targetPackage="org.alanfeng.entity" targetProject="src/main/java"/>
+
+        <javaClientGenerator targetPackage="org.alanfeng.mapper" targetProject="src/main/java"/>
+
+        <table tableName="sys_user"/>
+    </context>
+</generatorConfiguration>
